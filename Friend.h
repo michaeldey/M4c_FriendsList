@@ -16,12 +16,13 @@ class Friend
     public:
         Friend();
         Friend(string fName, string lName, string cell);
-        void setFName(string fName);
-        void setLName(string lName);
+        void setFName(string fName){firstName = fName;}
+        void setLName(string lName){lastName = lName;}
         void setCell(string cell);
-        string getFName();
-        string getLName();
-        string getCell();
+        string getFName(){return firstName;}
+        string getLName(){return lastName;}
+        string getCell(){return cellPhone;}
+        string display(){return firstName + " " + lastName + " " + cellPhone;}
         
     private:
         string firstName;

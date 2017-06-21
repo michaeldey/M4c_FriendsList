@@ -20,33 +20,7 @@ Friend::Friend(string fName, string lName, string cell) {
     std::cout<<getFName()<<" "<<getLName()<<" ("<<getCell()<<") has been created."<<endl;
 }
 
-void Friend::setFName(string fName)
-{
-    firstName = fName;
-}
-
-
-void Friend::setLName(string lName)
-{
-    lastName = lName;
-}
-
 void Friend::setCell(string cell) 
 {
     cellPhone = cell;
-}
-
-string Friend::getFName()
-{
-    return firstName;
-}
-
-string Friend::getLName()
-{
-    return lastName;
-}
-
-string Friend::getCell()
-{
-    return cellPhone;
 }
